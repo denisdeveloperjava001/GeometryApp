@@ -1,19 +1,15 @@
 package com.example.geometryapp;
 
-import org.example.geometrylibrary.Circle;
-import org.example.geometrylibrary.Rectangle;
-import org.example.geometrylibrary.Triangle;
 import org.example.geometryutils.Compare;
 import org.example.threedimensionalshapes.Cube;
-import org.springframework.boot.SpringApplication;
-
-
-
+import org.example.twodimensionalshapes.Circle;
+import org.example.twodimensionalshapes.Rectangle;
+import org.example.twodimensionalshapes.Triangle;
 
 public class GeometryAppApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(GeometryAppApplication.class, args);
+
         Triangle triangle = new Triangle(5,5,5,10);
         System.out.println(triangle.areaTriangle());
         System.out.println(triangle.perimeterTriangle());
@@ -27,9 +23,6 @@ public class GeometryAppApplication {
         compare.compareAreaTriangle(triangle,triangle);
         Cube cube = new Cube(10,5,66);
         System.out.println(cube.areaCube());
-
-
-
     }
 
 }
